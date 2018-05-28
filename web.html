@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <base href="https://xpert/osg/" />
+
+    <link rel="stylesheet" type="text/css" href="themes/jquery-ui-1.10.3.custom.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="Scripts/durandal/css/durandal.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap-theme.min.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Scripts/monaco.august/min/vs/editor/css/vs-theme.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="Scripts/leaflet/leaflet.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="Scripts/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="Scripts/colorpicker/jquery.simplecolorpicker.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="Scripts/chosen-combobox/chosen.min.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="Content/c3.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="Scripts/rickshaw/rickshaw.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="Styles/default.css?created=3.9.2017-12.05" />
+    <link rel="stylesheet" type="text/css" href="Content/jquery.dataTables.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="Scripts/impromptu/impromptu.min.css?created=3.2.2017-15.11" />
+    <link rel="stylesheet" type="text/css" href="Icons/css/sprite.css?created=3.9.2017-12.05" />
+    <link rel="stylesheet" type="text/css" href="Icons/sprite/sprite.css?created=3.9.2017-12.05" />
+
+    <script src="Scripts/d3/d3.v3.5.6.min.js?created=3.2.2017-15.11" charset="utf-8"></script>
+    <script src="Scripts/c3/c3.js?created=3.2.2017-15.11" charset="utf-8"></script>
+    <script src="Scripts/datajs/datajs-1.1.0.js?created=3.2.2017-15.11"></script>
+    <script src="Scripts/leaflet/leaflet.js?created=3.2.2017-15.11"></script>
+
+    <script type="text/javascript" src="Modules/Configuration.js?created=3.9.2017-12.06"></script>
+    <script type="text/javascript">
+        window.Config.applyOverrideConfiguration({"EnableTelemetry":true,"TelemetryVortexUrl":"https://vortex.data.microsoft.com/collect/v1","TelemetryVortexUrlV3":"https://web.vortex.data.microsoft.com/collect/v1","XpertSiteUri":"https://xpert/osg/","SearchIntellisenseEnableCs":true,"SearchIntellisenseEnableEtw":false,"Debug":false,"BaseDataUri":"https://xpert/osg/","TenantNames":["osg","xbox"],"TenantFriendlyNames":["Operating Systems Group","Xbox"],"TenantUrls":["https://xpert/osg","https://xpert/xbox"],"AlertDeliveryTypesEnabled":["Tfs","MSDialAlarm","Icm","XAP"],"UserName":null,"TelemetryEnabledActions":["TimeSelectorRedraw","LineChartCreate","LineChartUpdate","Update\\StreamTable","InitializeViewDataSources","InitializeViewWidgets","UpgradeView","InitializeView","BarChartUpdate"],"UserClaims":null,"HelpLink":"http://osgwiki.com/wiki/xpert","LogoPath":"/Microsoft.Xbox.Xpert.UX;component/Resources/Images/Logo/Xpert.png","XpertTenant":"osg","ChartImplementation":"Rickshaw","DefaultHomePageUri":"https://xpert/updates","WindowsAuthUser":{"UserName":"REDMOND\\YANS","Roles":["XpertAccess"]},"AuthenticationMode":1,"AADTenant":null,"AADClientId":null,"Flights":[]});
+        window.Config.current.Version = "3.9.2017-12.07";
+    </script>
+    <script>
+        var BaseUrl = "App/";
+    </script>
+    <script src="App/RequireConfiguration.js?created=3.9.2017-12.06"></script>
+    <script src="Scripts/requirejs/require.js?created=3.2.2017-15.11"></script>
+
+    <script src="bundle.js?created=3.9.2017-12.07"></script>
+    <script src="common.js?created=3.9.2017-12.07"></script>
+    <script src="xpertapi.js?created=3.9.2017-12.07"></script>
+        <script src="viewItemBuilding.js?created=3.9.2017-12.07"></script>
+        <script src="viewUpgrades.js?created=3.9.2017-12.07"></script>
+    <script src="widgets.js?created=3.9.2017-12.07"></script>
+    <script src="widgetViews.js?created=3.9.2017-12.07"></script>
+
+    <script>
+        require(["App/Main"]);
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="applicationHost">
+        <div>
+            Loading Xpert...
+        </div>
+    </div>
+</body>
+</html>
